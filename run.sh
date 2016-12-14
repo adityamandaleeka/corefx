@@ -9,5 +9,7 @@ fi
 __toolRuntime=$__scriptpath/Tools
 __dotnet=$__toolRuntime/dotnetcli/dotnet
 
+export COMPlus_INTERNAL_ThreadSuspendInjection=0
+
 $__dotnet $__toolRuntime/run.exe $*
 exit $?

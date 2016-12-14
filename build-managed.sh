@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+export COMPlus_INTERNAL_ThreadSuspendInjection=0
+
 usage()
 {
     echo "Usage: $0 [platform] [useservergc]"

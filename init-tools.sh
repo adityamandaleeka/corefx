@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+export COMPlus_INTERNAL_ThreadSuspendInjection=0
+
 __scriptpath=$(cd "$(dirname "$0")"; pwd -P)
 __init_tools_log=$__scriptpath/init-tools.log
 __PACKAGES_DIR=$__scriptpath/packages
