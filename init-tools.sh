@@ -121,6 +121,8 @@ if [ ! -e $__INIT_TOOLS_DONE_MARKER ]; then
 
             echo "Overwriting libcoreclr..."
             cp "$__scriptpath/libcoreclr.so" "$__DOTNET_PATH/shared/Microsoft.NETCore.App/1.0.0/libcoreclr.so"
+            cp "$__scriptpath/mscorlib.*" $__DOTNET_PATH/shared/Microsoft.NETCore.App/1.0.0/
+            cp "$__scriptpath/System.Private.C*" $__DOTNET_PATH/shared/Microsoft.NETCore.App/1.0.0/
 
             cd $__scriptpath
 
