@@ -119,6 +119,7 @@ if [ ! -e $__INIT_TOOLS_DONE_MARKER ]; then
             cd $__DOTNET_PATH
             tar -xf $__DOTNET_PATH/dotnet.tar
 
+            echo "Overwriting libcoreclr..."
             cp "$__scriptpath/libcoreclr.so" "$__DOTNET_PATH/shared/Microsoft.NETCore.App/1.0.0/libcoreclr.so"
 
             cd $__scriptpath
